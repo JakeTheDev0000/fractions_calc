@@ -24,5 +24,10 @@ namespace fractions_calculater
         {
             InitializeComponent();
         }
+
+        private void submit(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"{firstNum.Text} + {seccondNum.Text}", "TESTY");
+        }
     }
 }

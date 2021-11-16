@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:fractions_calculater"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="fraction calc [BETA 0.2]" Height="450" Width="800">
+    <Border Padding="5">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <TextBox Text="" TextAlignment="Center" Margin="31,55,266,285" FontSize="55" x:Name="firstNum"/>
+                <Rectangle Fill="Red" Height="1" Margin="31,212,31,211"/>
+                <TextBox Text="" TextAlignment="Center" Margin="31,286,266,55" FontSize="55" x:Name="seccondNum"/>
+                <Button Content="Submit" Margin="285,279,31,57" Click="submit"/>
+            </Grid>
+        </Grid>
+    </Border>
 </Window>
